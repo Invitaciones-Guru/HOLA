@@ -1,0 +1,102 @@
+:root {
+    --white-bg: #f8f6f4;
+    --green-forest: #5a6b54;
+    --green-light: #eef2ed; 
+    --brown-earth: #9b6d52;
+    --dark-text: #2c2c2c;
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+body { 
+    margin: 0; 
+    font-family: 'Montserrat', sans-serif; 
+    background: var(--white-bg); 
+    color: var(--dark-text); 
+    overflow-x: hidden; 
+}
+
+.script-font { font-family: 'Alex Brush', cursive; }
+
+/* HERO OPTIMIZADO */
+.hero { 
+    height: 100vh; 
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('portada.jpeg');
+    background-size: cover; background-position: center;
+    display: flex; align-items: center; justify-content: center; text-align: center; color: white;
+}
+.hero h1 { font-size: 4.5rem; margin: -10px 0; font-weight: 400; }
+.location-top { letter-spacing: 4px; font-size: 0.7rem; margin-top: 20px; font-weight: 400; }
+
+/* SECCIÓN PADRES */
+.parents-section { 
+    background: var(--green-forest); 
+    color: white; 
+    padding: 60px 20px; 
+    text-align: center; 
+}
+.parents-section .intro { font-size: 2.2rem; margin-bottom: 30px; line-height: 1.1; }
+.parents-label { font-size: 0.8rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 20px; opacity: 0.8; }
+.parents-grid { 
+    display: flex; flex-direction: column; gap: 20px; 
+    border: 1px solid rgba(255,255,255,0.3); padding: 30px 10px; margin-bottom: 40px;
+}
+.parent-pair p { margin: 5px 0; font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; }
+
+/* COUNTDOWN MÓVIL */
+.countdown { 
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;
+    background: white; padding: 20px 10px; border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.time-block span { font-size: 1.5rem; font-weight: 600; color: var(--green-forest); display: block; }
+.time-block small { font-size: 0.5rem; letter-spacing: 1px; color: var(--brown-earth); }
+
+/* ITINERARIO */
+.itinerary { background: var(--green-light); padding: 60px 15px; text-align: center; }
+.event-card { 
+    background: white; padding: 30px 15px; border-radius: 15px; margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+}
+.event-card h3 { font-size: 3rem; color: var(--green-forest); margin-bottom: 5px; }
+.event-time { font-size: 1.8rem; font-weight: 200; margin-bottom: 20px; font-family: 'Cormorant Garamond'; }
+.img-container img { width: 100%; height: 300px; object-fit: cover; border-radius: 8px; }
+.place-name { font-weight: 600; margin-top: 20px; font-size: 1.1rem; }
+.address-detail { font-size: 0.9rem; color: #777; margin-bottom: 20px; }
+
+/* BOTONES */
+.btn-brown { 
+    display: block; background: var(--brown-earth); color: white; 
+    padding: 15px; border-radius: 50px; text-decoration: none; font-size: 0.8rem; letter-spacing: 2px;
+}
+.btn-inspo { 
+    display: inline-block; border: 1px solid var(--brown-earth); 
+    padding: 12px 30px; border-radius: 50px; text-decoration: none; color: var(--brown-earth); font-size: 0.8rem;
+}
+
+/* ÁLBUM EDITORIAL MÓVIL */
+.album-editorial-section { padding: 60px 20px; background: #fff; }
+.album-layout { display: flex; flex-direction: column; border: 1px solid #eee; }
+.album-text { padding: 40px 20px; text-align: center; }
+.album-title { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; margin-bottom: 15px; }
+.album-desc { font-size: 0.9rem; color: #666; margin-bottom: 30px; }
+.btn-noir-minimal { 
+    display: block; padding: 15px; border: 1px solid #000; color: #000; 
+    text-decoration: none; font-size: 0.7rem; letter-spacing: 3px; font-weight: 600;
+}
+.album-visual { background: #fcfcfc; padding: 40px 20px; display: flex; justify-content: center; }
+.qr-placeholder { background: white; padding: 20px; border: 1px solid #eee; text-align: center; }
+.qr-img { width: 140px; height: auto; }
+
+/* RSVP */
+.rsvp-section { padding: 60px 20px; background: var(--green-forest); }
+.rsvp-card { background: white; padding: 40px 25px; border-radius: 15px; text-align: center; }
+#rsvpForm input, #rsvpForm select { 
+    width: 100%; padding: 15px; margin: 10px 0; border: none; 
+    border-bottom: 1px solid #eee; font-family: 'Montserrat';
+}
+.btn-confirm { 
+    background: var(--dark-text); color: white; border: none; 
+    padding: 18px; width: 100%; font-weight: 600; margin-top: 20px; letter-spacing: 2px;
+}
+.no-kids { font-size: 0.6rem; letter-spacing: 2px; margin-top: 25px; opacity: 0.5; }
